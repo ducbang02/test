@@ -2,12 +2,11 @@ import streamlit as st
 import pickle as pkl
 import numpy as np
 
-st.title('Phân loại bệnh nhân tiểu đường')
+
 
 # Load the model
-input_model = open('test.pkl', 'rb')
-model = pkl.load(input_model)
-
+input = open('diabetes.pkl', 'rb')
+model = pkl.load(input)
 # Streamlit app
 
 st.title("Ứng Dụng Dự Đoán Điabetes")
