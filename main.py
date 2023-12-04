@@ -3,9 +3,8 @@ import pickle
 import numpy as np
 
 # Load the model
-model_path = 'test.pkl'  # Thay đổi đường dẫn đến file model của bạn
-with open(model_path, 'rb') as model_file:
-    model = pickle.load(model_file)
+input_model = open('test.pkl', 'rb')
+model = pkl.load(input_model)
 
 # Streamlit app
 
