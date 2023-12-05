@@ -2,14 +2,14 @@ import streamlit as st
 import pickle as pkl
 import numpy as np
 
-
+st.title("Ứng Dụng Dự Đoán Điabetes")
 
 # Load the model
 input = open('diabetes.pkl', 'rb')
 model = pkl.load(input)
 # Streamlit app
 
-st.title("Ứng Dụng Dự Đoán Điabetes")
+
 
 # Tạo 8 text fields và lưu giá trị vào mảng input_data
 input_data = []
