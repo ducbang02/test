@@ -1,17 +1,13 @@
 import streamlit as st
-import joblib as jl
+import pickle as pkl
 import numpy as np
 ###
 st.title("Ứng Dụng Dự Đoán Điabetes")
 
 # Load the model
-model_path = 'diabetes.joblib'  # Đã sửa lại thành đuôi joblib
-try:
-    with open(model_path, 'rb') as input:
-        model = jl.load(input)
-    st.success("Mô hình đã được tải thành công!")
-except Exception as e:
-    st.error(f"Không thể tải mô hình. Lỗi: {e}")
+input = open('lrc_xray.pkl', 'rb')
+model = pkl.load(input)
+
 
 # Tạo 8 text fields và lưu giá trị vào mảng input_data
 input_data = []
