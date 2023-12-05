@@ -5,7 +5,7 @@ import numpy as np
 st.title("Ứng Dụng Dự Đoán Điabetes")
 
 # Load the model
-input = open('lrc_xray.pkl', 'rb')
+input = open('diabetes.pkl', 'rb')
 model = pkl.load(input)
 
 
