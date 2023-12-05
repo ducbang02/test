@@ -3,7 +3,7 @@ import sklearn
 import pickle as pkl
 import numpy as np
 
-###
+
 st.title("Ứng Dụng Dự Đoán Điabetes")
 
 # Load the model
